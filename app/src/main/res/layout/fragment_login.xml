@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".LoginFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/bg_shape"
+>
+        <com.google.android.material.textview.MaterialTextView
+                android:text="LOGIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="32dp"
+                android:textSize="24sp" android:padding="8dp"
+                android:textColor="#FFFFFF"
+                style="@style/TextAppearance.MaterialComponents.Button"
+                android:textStyle="bold|italic"/>
+        <EditText
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:hint="Username"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/te_shape"
+
+                android:id="@+id/username_lgn"
+
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                android:layout_marginTop="16dp"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/password_lgn"
+                app:layout_constraintTop_toBottomOf="@+id/username_lgn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="16dp"
+                android:hint="Password"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/te_shape"
+
+        />
+        <Button
+                android:text="LOGIN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/submit_lgn"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/password_lgn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/btn_main"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:padding="8dp"
+        />
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/submit_lgn"
+                      android:layout_marginTop="32dp">
+                <TextView
+                        android:text="Don't have an account?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/submit_lgn" app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textSize="18sp"
+                        android:padding="8dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold|italic"/>
+                <TextView
+                        android:text="SIGN UP"
+                        android:id="@+id/register_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:padding="8dp"
+                        android:layout_marginBottom="32dp"
+                        android:textColor="#0019FF"
+                        android:textStyle="bold|italic"
+                        android:clickable="true"
+
+                />
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

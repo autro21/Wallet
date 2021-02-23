@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<item android:id="@+id/menu_share"
+	      android:title="Share Task"/>
+
+	<item android:id="@+id/save_task_info"
+	      app:showAsAction="always"
+	      android:title="SAVE"
+	      android:icon="@drawable/ic_done"
+	/>
+
+	<item android:id="@+id/delete_task_option"
+	      android:title="Delete Task"/>
+</menu>
